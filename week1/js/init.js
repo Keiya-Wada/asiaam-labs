@@ -1,7 +1,7 @@
 // Initialize the map
 const map = new maplibregl.Map({
     container: 'map', // container ID
-    style: 'https://demotiles.maplibre.org/styles/osm-bright-gl-style/style.json', // Your style URL
+    style: 'https://api.maptiler.com/maps/streets/style.json?key=get_your_own_OpIi9ZULNHzrESv6T2vL', // Your style URL
     center: [-118.444,34.0709], // Starting position [lng, lat]
     zoom: 15 // Starting zoom level
 });
