@@ -10,20 +10,83 @@
         <script src="https://unpkg.com/maplibre-gl/dist/maplibre-gl.js"></script>
         <!-- I'd add some style if here if I had any -->
         
+        
 
     </head>
 
     <body>
         <header>
-            Hello World! 
+            <h1 style="display:inline;">hello world!</h1>
+            <hr>
+            <h2 style="display:inline;">My Local Town Map >>>>>>>>>>>>>>>>>>>>>>>>>>>here</h2>
         </header>
+        
+        
 
         <main>
             <!-- hint: majority of your lab assignment can go here -->
             <div class="portfolio">
+                <h1>
+                    A little bit about myself
+                </h1>
+
+                <div class="row">
+                    <div class="column">
+                      <img src="download.jpeg"
+                                width = "200"
+                                height = "150">
+                    </div>
+                    <div class="column">
+                      <img src="IMG_3588.PNG"
+                                width = "200"
+                                height = "150">
+                    </div>
+                    
+                </div>
+
+                
+
+                <p>
+                    My name is Keiya Wada and I am a rising senior at Aragon High School. In my free time, I like to play tennis with my friends, practice my cello, and watch anime/Youtube. I work closely with the San Jose Japan Town, and with the tools I learn from this class I hope to create a GIS that covers the Japan Town for archiving purposes.
+                </p>
+
+                <p>Places where I want to visit next summer</p>
+                <ol>
+                    <li>Yellowstone Natinoal Park</li>
+                    <li>Switzerland</li>
+                    <li>Japan</li>
+                </ol>
+
+                <p>What I want to eat</p>
+
+                <ol>
+                    <li>Fried Rice</li>
+                    <li>
+                      Candy
+                      <!-- closing </li> tag is not here! -->
+                      <ul>
+                        <li>Haribo</li>
+                        <li>Nerd Clusters</li>
+                      </ul>
+                    </li>
+                    <!-- Here's the closing </li> tag -->
+                    <li>Tonkatsu</li>
+                </ol>
+
+                <a href="https://www.foodnetwork.com/how-to/articles/how-to-make-perfect-rice-a-step-by-step-guide">
+                    I love rice
+                </a>
+                <br>
+                <a href="https://luminosity.gg/news/smash-ultimates-2nd-official-tier-list">
+                    I love Smash Bros
+                </a>
+                  
+
                 <!-- Portfolio content goes here -->
             </div>
             <div id="map">
+                
+               
                 <!-- Map will be inserted here -->
             </div>
         </main>
@@ -31,12 +94,10 @@
         <div id="footer">
             Copyright(2024@@@)
         </div>
-        <img src="download.jpeg">
-
-        <script src = "js/init.js">
-       
-        </script>
+        
 
     </body>
-    
+    <script src = "js/init.js">
+       
+    </script>
 </html>

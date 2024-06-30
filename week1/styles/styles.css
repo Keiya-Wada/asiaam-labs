@@ -24,6 +24,12 @@ body {
         "main"
         "footer"; 
     grid-template-rows: auto 1fr auto; /* Adjusted to reflect the simplified structure */
+
+    
+    .header h1 { 
+        margin:10px;
+        padding:100px; 
+    }
 }
 
 main {
@@ -31,11 +37,29 @@ main {
     grid-template-areas:
         "portfolio map"; 
     grid-template-columns: 1fr 1fr; 
+    
+    .column {
+        float: left;
+        width: 33.33%;
+      }
+      
+      
+      .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+      ol {
+        padding-left: 30px;
+    }
 }
 
 /* Assigns each major section to a part of the grid */
 header { 
     grid-area: header; 
+    
+    
 }
 
 main { 
