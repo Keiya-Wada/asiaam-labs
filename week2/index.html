@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hello World with MapLibreGl</title>
+        <!-- hint: remember to change your page title! -->
+        <meta charset="utf-8" />
+        <link rel="shortcut icon" href="#">
+        <link rel="stylesheet" href="styles/style.css">
+
+        <!-- MapLibreGL's css-->
+        <link rel="stylesheet" href="https://unpkg.com/maplibre-gl/dist/maplibre-gl.css" />
+
+        <!-- MapLibreGL's JavaScript-->
+        <script src="https://unpkg.com/maplibre-gl/dist/maplibre-gl.js"></script>
+    </head>
+
+    <body>
+        <header>
+
+            
+            <div><h1>Lab Assignment #2</h1>
+                <h2>My Portfolio</h2>
+            </div>
+            <h2>Map of San Mateo</h2>
+            <!-- hint: you can make a menu with other links here if you'd like -->
+        </header>
+
+        <main>
+            <div class="portfolio" id="portfolio">
+                <div id="contents"></div>
+                <!-- Portfolio content goes here -->
+                 <h2>Where I usually spend most my time</h2>
+                 <ul>
+                     <li>High School</li>
+                     <li>Downtown</li>
+                     <li>Tennis</li>
+                 </ul>
+                 <button id ="myBtn">***Click Here to Change Color***</button>
+            </div>
+
+            <div id="map"></div>
+        </main>
+        <div id="footer">
+            Copyright(2024)
+        </div>
+        <script src="js/init.js"></script>
+    </body>
+</html>
