@@ -1,0 +1,73 @@
+* {
+    font-family: initial;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: aqua;
+}
+
+html, body {
+    height: 80vh;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+    grid-template-rows: auto 1fr auto;
+}
+
+main {
+    display: grid;
+    grid-template-areas:
+        "portfolio map";
+    grid-template-columns: 1fr 1fr;
+}
+
+header { 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items:center;
+    align-items: end;
+    grid-area: header;
+}
+
+main { 
+    grid-area: main;
+}
+
+.portfolio {
+    grid-area: portfolio;
+    background-color: bisque;
+    display: flex; /* This will make the items inside the portfolio flex items */
+    flex-direction: column; /* This can be row if you want the items to be side by side */
+    justify-content: center; /* This can be flex-start, flex-end, space-between, space-around, space-evenly */
+    align-items: center; /* This can be flex-start, flex-end, stretch, baseline */
+}
+
+#map { 
+    grid-area: map;
+    height: 80vh;
+}
+
+#footer {
+    grid-area: footer;
+    padding: 1rem;
+    background-color: #4677a0; /* Sets a darker background for contrast */
+    color: #fff; /* Ensures text is readable against the dark background */
+    text-align: center; /* Centers the footer content */
+}
+
+#contents{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
